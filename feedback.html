@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Yanone+Kaffeesatz&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!---<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>TalkTime</title>
+
+</head>
+
+<body>
+    <header>
+        <a href="home" class="brand">talk<span>Time.</span></a>
+        <nav class="navbar">
+            <a href="home">Home</a>
+            <a href="posts">Posts</a>
+            <a href="details">About</a>
+        </nav>
+        <div class="search-box">
+            <div>
+                <input type="text" name="q" placeholder="search ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="container2">
+        <div class="sub-title">
+            <h3>Feedback form</h3>
+        </div>
+        <div class="wrap">
+            <p class="text">How much would you rate our site?</p>
+            <div class="ratings">
+                <div class="rating" onclick="active()">1</div>
+                <div class="rating">2</div>
+                <div class="rating">3</div>
+                <div class="rating">4</div>
+                <div class="rating">5</div>
+            </div>
+            <textarea class="fbarea" id="" cols="30" rows="10" placeholder="Write your opinion here......"></textarea>
+            <button id="submitbtnfb">Send feedback</button>
+
+        </div>
+        
+
+        <br>
+        <div class="home-socials">
+            Our socials:
+        </div>
+        <div class="social_items">
+            <div class="socials"><a href="#" target="_b" class="social_item">
+                    <i data-feather="github"></i>
+                    <span>/dmandal</span>
+                </a></div>
+            <div class="socials"><a href="#" target="_b" class="social_item">
+                    <i data-feather="linkedin"></i>
+                    <span>/dmandal</span>
+                </a></div>
+            <div class="socials"><a href="#" target="_b" class="social_item">
+                    <i data-feather="twitter"></i>
+                    <span>/dmandal</span>
+                </a></div>
+        </div>
+
+    </div>
+    <script>feather.replace()</script>
+    <script src="script.js"></script>
+</body>
+
+</html>

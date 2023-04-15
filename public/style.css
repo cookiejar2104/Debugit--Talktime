@@ -1,0 +1,396 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+    font-family: 'Outfit', sans-serif;
+    background-color: rgb(35, 36, 37);
+    color: white;
+}
+a{
+    color:rgb(13, 44, 86) ;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container{
+    margin: 25px;
+    padding: 25px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 7%;
+    padding-left: 7%;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar a{
+        font-size: 25px;
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+
+}
+.navbar a:hover{
+    color: rgb(240, 136, 9);
+    cursor: pointer;
+    text-decoration:overline;
+    transition: 0.4s;
+
+}
+.brand{
+    font-size: 45px;
+    color: white;
+}
+.brand span, .sub-title span, .home-text span{
+    color:cadetblue;
+}
+
+/*navbar*/
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navigation{
+    padding: 10px;
+    width: 65%;
+    
+    border-radius: 5px;
+    max-height: 80px;
+    margin-right:10px;
+}
+.nav-list{
+    list-style-type: none;
+    overflow: hidden;
+}
+.nav-item a{
+    float: right;
+    display:block;
+    text-align: center;
+    margin-inline: 20px;
+    font-size: 20px;
+    padding: 10px;
+    color:#fff;
+}
+
+.nav-item a:hover{
+    border-radius: 15px;
+    background-color: orange;
+}
+@media screen and (max-width: 460px){
+    .navigation{
+        max-height: auto;
+    } 
+    .nav-item a{
+        float:left;
+        display:inline;
+        margin-inline: 3px;
+        font-size: 10px;
+        padding: 5px;
+    }     
+    .brand{
+        font-size:20px;
+    }
+}
+/*search*/
+.search-box{
+    margin-top: 0;
+    padding: 20px;
+    padding-left: 0;
+    display:flex;
+}
+.search-box input{
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.search-box button{
+    margin-left: 8px;
+    padding: 10px;
+    border-radius: 16px;
+    background-color:#fff;
+    color:#000000;
+}
+
+.search-box button:hover{
+    cursor: pointer;
+    background-color: orange;
+    color: #fff;
+    transition: 0.4s;
+}
+
+/*forums*/
+.sub{
+    margin-top: 10px;
+}
+.sub-title{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+}
+.home-text{
+    font-size: 25px;
+}
+.social-items{
+    text-decoration: none;
+    color: cadetblue;
+    display: flex;
+    flex-direction: column;
+}
+.socials{
+    flex-direction: row;
+    color: cadetblue;
+}
+.social_items{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 2rem;
+    width: max-content;
+}
+.social_item{
+    margin-top: 1.5rem;
+    margin-right: 10px;
+    font-weight: 200;
+font-size: 16;
+display: flex;
+gap: 0.5rem;
+align-items: center;
+justify-content: flex-start;
+color: #f9f9fa;
+}
+.social_item:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: orange;
+    transition: 0.4s;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 460px) {
+    .container2{
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+
+
+
+/*----------posts-------------*/
+.container2{
+    margin: 55px;
+    margin-top: 200px;
+    padding: 75px;
+    padding-top: 0;
+}
+.feedbacklink{
+    text-decoration: none;
+    color: cadetblue;
+}
+.feedbacklink:hover{
+    text-decoration: underline;
+    color: orange;
+    transition: 0.4s;
+}
+
+
+
+/*--------posts-------*/
+
+.head{
+    display: flex;
+    background-color: #4e4c4c;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.authors{
+    flex: 20%;
+}
+
+.content{
+    flex: 80%;
+}
+.topic-container{
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.body{
+    display: flex;
+    border-radius: 5px;
+    background-color:cadetblue;
+    padding: 20px;
+    margin-top: 5px;
+}
+.body .authors .username{
+    font-size: 20px;
+}
+.disc_head{
+    color: rgb(19, 83, 97);
+    font-weight: bold;
+    
+}
+.body .authors img{
+    margin: 10px;
+    margin-left: 0;
+    border-radius: 5px;
+    max-width: 50px;
+    max-height: 80px;
+}
+.body .content .comment button{
+    border:none;
+    border-radius: 10px;
+    padding:10px;
+    font-weight: bolder;
+    cursor: pointer;
+    float: right;
+}
+.comment button:hover, .close:hover, .submit__btn:hover{
+    background-color: orange;
+}
+.comm_btn{
+    margin-right: 20px;
+}
+.comm_btn_close{
+    margin-top: 10px;
+    border:none;
+    border-radius: 10px;
+    padding:10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.comm_btn_close:hover{
+    background-color: orange;
+}
+.hide{
+    display: none;
+}
+
+.comment-area{
+    margin-bottom:50px;
+    padding: 10px;
+}
+
+.comment-area textarea{
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    margin-block: 10px;
+}
+
+.comment-area input{
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.comment-area input:hover{
+    background-color: orange;
+}
+.close, .submit__btn{
+    border:none;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right:10px;
+
+}
+.comments{
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 5px;
+    padding-left: 15px;
+    background-color: rgb(43, 106, 108);
+}
+.comment{
+    margin: 3px;
+    font-size: 15px;
+}
+
+#user, #comment{
+    margin-left: 10px;   
+}
+#user, #comment:hover{
+    background-color: #fff;
+    cursor:text;
+}
+.nickname{
+    color: rgb(0, 0, 0);
+}
+
+/*----------feedback---------*/
+
+.wrap{
+    /*max-width: 75%;*/
+    background-color: rgb(68, 131, 133);
+    padding: 10px;
+    border-radius: 15px;
+    padding-left: 35px;
+    padding-bottom: 35px;
+    padding-right: 35px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.ratings{
+    display: flex;
+    justify-content: center;
+}
+.rating{
+    font-size: 25px;
+    padding: 30px;
+    margin: 30px;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.rating:hover{
+    background-color: orange;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.rating--active{
+    background-color: orange;
+    border-radius: 12px;
+}
+.fbarea{
+    margin-top: 10px;
+    color: white;
+    background-color: cadetblue;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+
+}
+
+#submitbtnfb{
+    color: black;
+    font-family: 'Outfit', sans-serif;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top:30px;
+    border: none;
+}
+#submitbtnfb:hover{
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
