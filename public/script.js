@@ -52,11 +52,8 @@ function submitFeedback(e){
             "userComment": commentForm,
     
         }
-        // add new feedback to array
         feedbackArr.push(newFeedback)
-        // clear inputs 
         resetForm()
-        // add feedback to list
         addFeedback(newFeedback)
     }
 
